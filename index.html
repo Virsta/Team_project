@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeStyle</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <!-- header  -->
+  <header class="header">
+    <div class="container">
+      <div class="header__items">
+        <a href="#">
+          <img class="header__logo" src="img/logo.svg" alt="">
+        </a>
+        <nav id="nav__responsive" class="nav nav_resp">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Our Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#posts" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="#footer" class="nav__link">Styleguide</a>
+            </li>
+          </ul>
+          <div class="cart">
+            <img class="cart__img" src="img/busket.svg" alt="">
+            <a href="" class="cart__link">
+              <p class="cart__text">Cart</p>
+            </a>
+            <div class="cart__number">0</div>
+          </div>
+          <div class="burger__menu" onclick="myFunction()">
+            <span class="burger__menu--line"></span>
+            <span class="burger__menu--line"></span>
+            <span class="burger__menu--line"></span>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- section hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__title">Best place to buy design</p>
+          <h1 class="hero__h1">Coffee Mugs</h1>
+          <p class="hero__subtitle">The most versatile furniture system ever created. Designed to fit your life, made to
+            move and grow.</p>
+          <button class="hero__btn">Explore Our Products</button>
+        </div>
+      </div>
+    </section>
+    <!-- section subtitle  -->
+    <section class="subtitle">
+      <div class="container">
+        <div class="subtitle__content">
+          <h2 class="heading__h2">Even the all-powerful Pointing has no control about the blind texts.</h2>
+          <p class="subtitle__text">It is a paradisematic country, in which roasted parts of sentences fly into your
+            mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
+            life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far
+            World of Grammar.</p>
+          <a href="" class="subtitle__link">Read the full Story</a>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <!-- FIRST BLOCK -->
+      <div class="first-block">
+        <div class="heading--pictures">
+          <div class="divider"></div>
+          <span class="title--pictures">Featured Mugs</span>
+          <div class="divider"></div>
+        </div>
+        <div class="item--pictures">
+          <div class="card--first">
+            <img src="img/picture1-fetured.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">pink premium ceramic</p>
+              <span class="price">$ 99.00 USD</span>
+            </div>
+          </div>
+          <div class="card--first">
+            <img src="img/picture2-fetured.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">golden designers mug</p>
+              <span class="new-price">$50.00 USD</span>
+              <span class="price old-price">$ 69.00 USD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECOND BLOCK -->
+      <div class="second-block">
+        <div class="heading--pictures">
+          <div class="divider"></div>
+          <span class="title--pictures">More Products</span>
+          <div class="divider"></div>
+        </div>
+        <div class="cards--pictures">
+          <div class="card-pictures">
+            <img src="img/picture1-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">red love cup</p>
+              <span class="new-price">$25.00 USD</span>
+              <span class="price old-price">$ 37.00 USD</span>
+            </div>
+          </div>
+          <div class="card-pictures">
+            <img src="img/picture2-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">black tea cup</p>
+              <span class="new-price">$15.00 USD</span>
+              <span class="price old-price">$ 29.00 USD</span>
+            </div>
+          </div>
+          <div class="card-pictures">
+            <img src="img/picture3-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">b&w essential mug</p>
+              <span class="price">$ 19.00 USD</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards--pictures">
+          <div class="card-pictures">
+            <img src="img/picture4-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">winter style mug</p>
+              <span class="price">$ 25.00 USD</span>
+            </div>
+          </div>
+          <div class="card-pictures">
+            <img src="img/picture5-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">ceramic tea</p>
+              <span class="price">$ 46.00 USD</span>
+            </div>
+          </div>
+          <div class="card-pictures">
+            <img src="img/picture6-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">no handle bar cup</p>
+              <span class="price">$ 19.00 USD</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards--pictures">
+          <div class="card-pictures">
+            <img src="img/picture7-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">espresso cup by mugs.co</p>
+              <span class="price">$ 25.00 USD</span>
+            </div>
+          </div>
+          <div class="card-pictures">
+            <img src="img/picture8-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">pink premium ceramic</p>
+              <span class="price">$ 99.00 USD</span>
+            </div>
+          </div>
+          <div class="card-pictures">
+            <img src="img/picture9-products.png" alt="picture">
+            <div class="card-text--first">
+              <p class="card-name">summer disigner cup</p>
+              <span class="price">$ 29.00 USD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- THIRD BLOCK -->
+      <div class="third-block">
+        <div class="heading--pictures">
+          <div class="divider"></div>
+          <span class="title--pictures">Buy 2 mugs and get a coffee magazine free</span>
+          <div class="divider"></div>
+        </div>
+        <div class="image--pictures">
+          <div class="image-content">
+            <img class="image-big" src="img/IMAGE-big.png" alt="image">
+            <div class="image-content-small">
+              <img src="img/IMAGE-small-top.png" alt="image">
+              <img src="img/IMAGE-small-bottom.png" alt="image">
+            </div>
+          </div>
+          <div class="text-content--pictures">
+            <span class="title--pictures">premium offer</span>
+            <h3 class="title-image--pictures">Get our Coffee Magazine</h3>
+            <p class="text-standart--pictures">The most versatile furniture system ever created. Designed to fit your
+              life.</p>
+            <button class="shopping" type="submit">start shopping</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Last section-->
+    <section>
+      <div>
+        <img src="img/img-bg2.png" class="img-bg2" alt="img-bg">
+      </div>
+      <div class="container">
+        <div class="heading--pictures margin-top-100">
+          <div class="divider"></div>
+          <p class="text-center text-between">Behind the mugs, lifestyle stories</p>
+          <div class="divider"></div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img src="img/img-card1.png" alt="img">
+            <h5 class="heading--h5">Health Check: why do I get a headache when I haven’t had my coffee?</h5>
+            <p class="card-description">
+              It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+            <span class="card-date">October 9, 2018</span>
+          </div>
+          <div class="card">
+            <img src="img/img-card2.png" alt="img">
+            <h5 class="heading--h5">How long does a cup of coffee keep you awake?</h5>
+            <p class="card-description">It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.
+            </p>
+            <span class="card-date">October 9, 2018</span>
+          </div>
+          <div class="card">
+            <img src="img/img-card3.png" alt="img">
+            <h5 class="heading--h5">Recent research suggests that heavy coffee drinkers may reap health benefits.</h5>
+            <p class="card-description">It is a paradisematic country, in which roasted parts of sentences fly into your
+              mouth.</p>
+            <span class="card-date">October 9, 2018</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="subscribe__info card-date">
+        <p>Sign up and get free coffee bags</p>
+        <h3 class="subscribe__h3">Coffee Updates</h3>
+        <form>
+          <input class="email uppercase" type="email" name="email" id="email" placeholder="customer @coffestyle.io" required>
+          <button class="button uppercase" type="submit">Subscribe</button>
+        </form>       
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div>
+      <a href="http://"><img class="logo footer__title" src="img/logo.svg" alt="coffeestyle logo"></a>
+      <p class="footer__text">Delivering the best coffee life since 1996. <br> From coffee geeks to the real ones.</p>
+      <p class="footer__text light-text footer__text-margin">CoffeeStyle Inc. © 1996</p>
+    </div>
+    <div>
+      <ul>
+        <p class="card-date footer__title">Menu</p>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">Home</a></li>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">Our Products</a></li>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">About</a></li>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">Contact</a></li>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">Styleguide</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <p class="card-date footer__title">Follow us</p>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">Facebook</a></li>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">Instagram</a></li>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">Pinterest</a></li>
+        <li class="footer__nav"><a class="footer__text footer__link" href="http://">Twitter</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="card-date footer__title">Contact Us</p>
+      <p class="footer__text">We’re Always Happy to Help</p>
+
+      <p class="contact"><a href="mailto:us@coffeestyle.io" class="footer__link">us@coffeestyle.io</a></p>
+
+      <p class="footer__text light-text">Powered by Webflow</p>
+    </div>
+
+  </footer>
+  <!-- script -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav__responsive");
+      if (x.className === "nav nav_resp") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav nav_resp";
+      }
+    }
+  </script>
+</body>
+
+</html>

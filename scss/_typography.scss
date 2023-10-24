@@ -1,0 +1,183 @@
+@use 'helpers' as *;
+
+
+.text-between {
+  @include font-style();
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 376px) {
+    @include font-style(10px)
+  }
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+  @media screen and (max-width: 376px) {
+    margin-top: 50px;
+  }
+}
+
+.heading--h5 {
+  @include font-style(20px, 32px);
+  margin: 29px 0 10px;
+
+  @media screen and (max-width: 376px) {
+    margin: 10px 0 10px;
+  }
+}
+
+.card-description {
+  @include font-style(16px, 28px, rgba(29, 31, 46, 0.7));
+  margin: 0 0 16px;
+}
+
+.card-date {
+  @include font-style(12px, 18px);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+%font-title-pictures {
+  @include font-style;
+  text-transform: uppercase;
+}
+
+%font-card-name {
+  @include font-style($size:20px, $line-h: 30px);
+  text-transform: capitalize;
+}
+
+%font-card-price {
+  @include font-style($size:16px, $line-h: 28px, $color: rgba(29, 31, 46, 0.7));
+}
+
+%font-card-new-price {
+  @include font-style($size:19px, $line-h: 32px, $color:rgba(162, 95, 75, 1));
+}
+
+%font-h3 {
+  @include font-style($size:36px, $line-h: 50px);
+}
+
+.title--pictures {
+  @extend %font-title-pictures;
+}
+
+.heading--pictures {
+  padding: 0 0 100px 0;
+  @include flex-box($align: center, $justify:center);
+
+  @media screen and (max-width: 376px) {
+    padding: 0 0 50px 0;
+  }
+}
+
+.card-name {
+  @extend %font-card-name;
+  margin: 0 0 5px 0;
+}
+
+.card-text--first {
+  padding: 35px 0 15px 0;
+}
+
+.price {
+  @extend %font-card-price;
+}
+
+.new-price {
+  @extend %font-card-new-price;
+  padding: 0 10px 0 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  text-decoration-color: rgba(29, 31, 46, 0.7);
+}
+
+.title-image--pictures {
+  @extend %font-h3;
+  max-width: 237px;
+  margin: 14px 0 15px 0;
+}
+
+.text-standart--pictures {
+  @extend %font-card-price;
+}
+
+.nav__link {
+  @include font-style (12px, 18px, $blue);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 900px) {
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+    color: $white;
+  }
+}
+
+.cart {
+  &__text {
+    @include font-style (12px, 18px, $blue);    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    @include font-style (11px, 18px, $white);
+    text-align: center;
+  }
+}
+
+.hero {
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    @include font-style (12px, 18px, $white);    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__h1 {
+    @include font-style (47px, 60px, $white);    
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    @include font-style (17px, 30px, $white);
+  }
+
+  &__btn {
+    @include font-style (12px, 18px, $blue);    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+.subtitle {
+  &__text {
+    @include font-style (16px, 28px, $blue);
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__link {
+    @include font-style (15px, 28px, $pink);
+  }
+}
+
+.heading__h2 {
+  margin: 0 auto;
+  max-width: 650px;
+  @include font-style (28px, 40px, $blue);
+}
+

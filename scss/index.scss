@@ -1,0 +1,117 @@
+@use 'base';
+@use 'layout';
+@use 'typography';
+@use 'modules';
+@use 'normalize';
+@use 'helpers' as *;
+.first-block {
+  @include flex-box($direction: column, $justify:initial);
+  text-align: center;
+  margin: auto;
+  & .item--pictures {
+    @include flex-box;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width:800px) {
+    .card--first {
+      width: 380px;
+    }
+  }
+}
+.divider {
+  width: 30px;
+  border: 1px solid #ececed;
+}
+.second-block {
+  @include flex-box($direction: column, $justify:initial);
+  text-align: center;
+  margin: auto;
+  padding: 100px 0 150px 0;
+  & .cards--pictures {
+    flex-wrap: wrap;
+    @include flex-box;
+    @media screen and (max-width:376px) {
+      justify-content: center;
+    }
+    @media screen and (max-width:800px) {
+      .card-pictures {
+        &:nth-child(3n+3) {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+.third-block {
+  @include flex-box($direction: column, $justify:initial);
+  padding: 0 0 130px 0;
+  margin: auto;
+  & .image--pictures {
+    @include flex-box;
+    flex-wrap: wrap;
+    @media screen and (max-width:800px) {
+      .image-big {
+        width: 335px;
+      }
+    }
+    & .text-content--pictures {
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+}
+.shopping {
+  padding: 9px 24px;
+  @extend %font-title-pictures;
+  letter-spacing: 2px;
+  border: 0;
+  color: #fff;
+  animation-name: btn;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-fill-mode: both;
+  &:hover {
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+  }
+  &:active {
+    box-shadow: 0 0 20px 6px gray;
+    animation: none;
+    background-color: rgba(29, 31, 46, 1);
+  }
+}
+@keyframes btn {
+  0% {background-color: rgba(29, 31, 46, 1);}
+  10% {background-color: red;color: #000;}
+  20% {background-color: orange;color: #000;}
+  30% {background-color: yellow;color: #000;}
+  60% {background-color: green;color: #000;}
+  70% {background-color: lightblue;color: #000;}
+  80% {background-color: blue;color: #000;}
+  90% {background-color: purple;color: #000;}
+  100% {background-color: rgba(29, 31, 46, 1);}
+}
+.image-content {
+  max-width: 460px;
+  @include flex-box;
+  flex-wrap: wrap;
+  @media screen and (max-width:376px) {
+    .image-big {
+      width: 355px;
+    }
+  }
+  @media screen and (max-width:800px) {
+    max-width: 340px;
+  }
+  & .image-content-small {
+    @include flex-box($direction: column);
+    @media screen and (max-width:376px) {
+      flex-direction: row;
+    }
+    @media screen and (max-width:800px) {
+      flex-direction: row;
+    }
+  }
+}
+
+
