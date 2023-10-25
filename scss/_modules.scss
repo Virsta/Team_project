@@ -4,7 +4,7 @@
   @include flex-box(row, space-between, initial, 20);
   margin-bottom: 200px;
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 420px) {
     @include flex-box(column, space-between, center, 30);
     margin-bottom: 90px;
   }
